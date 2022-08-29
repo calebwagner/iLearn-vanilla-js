@@ -1,0 +1,14 @@
+{
+    "connections": [
+        {
+          "id": 1,
+            "user": 1,
+            "profile": 2
+        },
+        {
+          "id": 2,
+            "user": 2,
+            "profile": 1
+        }
+      ]
+}

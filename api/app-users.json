@@ -1,0 +1,35 @@
+{
+    "appUsers": [
+        {
+          "id": 1,
+          "bio": "Subtly charming problem solver. Beer nerd. Alcohol fan. Wannabe creator. Total internetaholic. Zombie lover.",
+          "image_url": "media/images/profile-image4.jpg",
+          "password": "password",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "john@smith.com",
+          "first_name": "John",
+          "last_name": "Smith",
+          "email": "john@smith.com",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2020-08-28T14:51:39.989Z"
+          },
+          {
+            "id": 2,
+              "user": 2,
+              "bio": "Unapologetic alcoholaholic. Tv fanatic. Social media lover. Food aficionado. Troublemaker. Internet geek. Amateur travel junkie. Award-winning writer. Web guru.",
+              "image_url": "media/images/profile-image3.jpg",
+              "password": "password",
+              "last_login": null,
+              "is_superuser": false,
+              "username": "john@smith.com",
+              "first_name": "Jane",
+              "last_name": "Smith",
+              "email": "john@smith.com",
+              "is_staff": false,
+              "is_active": true,
+              "date_joined": "2020-08-28T14:51:39.989Z"
+          }
+    ]
+}

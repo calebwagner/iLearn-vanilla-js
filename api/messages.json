@@ -1,0 +1,23 @@
+{
+   "messages": [
+        {
+          "id": 1,
+            "user": 2,
+            "recipient": 1,
+            "title": "Our upcoming session",
+            "description": "This is all you need to bring.",
+            "read": false,
+            "timestamp": 1629403224
+        },
+        {
+          "id": 2,
+            "user": 1,
+            "recipient": 2,
+            "title": "IMPORTANT",
+            "description": "Teach me please",
+            "read": false,
+            "timestamp": 1629403224
+        }
+      ]
+      
+}
