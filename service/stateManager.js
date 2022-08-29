@@ -15,4 +15,36 @@ const appState = {
     messageModal: false
 }
 
-const mainEl = document.getElementById(".DOM");
+const body = document.getElementById(".DOM");
+
+export const fetchPosts = () => {
+    return fetch(`${baseUrl}/posts`)
+    .then(res => res.json)
+    .then(post => appState.posts = post)
+    .then(() => {body.dispatchEvent(new CustomEvent("state changed: got posts"));
+})};
+
+export const sendPost = (newPost) => {
+    const fetchOptions = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newPost),
+    };
+    return fetch(`${baseUrl}/posts`, fetchOptions)
+      .then(response => response.json())
+      .then(() => {body.dispatchEvent(new CustomEvent("state changed: post sent"));
+      });
+  };
+
+  export const deletePost = (id) => {
+    return fetch(`${baseUrl}/posts/${id}`,
+    { method: "DELETE" }).then(() => {
+      body.dispatchEvent(new CustomEvent("state changed: post deleted"));
+    });
+  };
+
+  export const getPosts = () => {
+    return [...appState.posts];
+  };
